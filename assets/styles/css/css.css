@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #ff7979;
+  background-image: url("../../images/bg-intro-mobile.png");
+}
+body header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+}
+body header article {
+  font-weight: 500;
+}
+body .topBtn {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: #5e54a4;
+  color: #ffffff;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+}
+body .topBtn .topBtnText {
+  font-weight: 600;
+}
+body form {
+  background-color: #ffffff;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+}
+body form input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #3d3b48;
+}
+body form .botBtn {
+  background-color: #38cc8b;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body form .botBtn:hover {
+  background-color: #77E2B3;
+  cursor: url("../../images/pointer.png"), pointer;
+}
+body form .tos {
+  color: #bab7d4;
+  font-size: 11px;
+}
+body form .tos a {
+  color: #ff7979;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    background-image: url("../../images/bg-intro-desktop.png");
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .container {
+  padding: 0px 24px;
+}
+body .one {
+  padding-top: 88px;
+}
+body .one article {
+  padding-top: 16px;
+}
+body .two {
+  padding-top: 64px;
+  padding-bottom: 68px;
+}
+body .two form {
+  margin-top: 24px;
+  border-radius: 10px;
+  padding: 24px;
+}
+body .two form input {
+  width: 100%;
+  padding: 15px 0 15px 19.41px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(61, 59, 72, 0.2);
+}
+body .two button {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 450px;
+}
+body .two .topBtn {
+  padding: 18px 66px;
+}
+body .two .botBtn {
+  padding: 15px 0;
+}
+body .two .tos {
+  padding-top: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    align-items: center;
+    min-height: 800px;
+  }
+  body .one {
+    padding: 0 45px 0 165px;
+    height: 100%;
+  }
+  body .two {
+    padding-right: 165px;
+  }
+  body .two button {
+    max-width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=css.css.map */

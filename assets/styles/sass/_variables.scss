@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+// Colors
+$primary: #ff7979;
+$white: #ffffff;
+$btnColorPurple: #5e54a4;
+$btnColorGreen: #38cc8b;
+$inputColor: #3d3b48;
+$tosColor: #bab7d4;
+$inputBorderColor: #DEDEDE;
+$btnHover:#77E2B3;
+// Fonts
+$pageFont: "Poppins", sans-serif;
+$titleFontSize: 28px;
+$inputFontSize: 14px;
+$btnFontSize: 15px;
+$tosFontSize: 11px;
+$titleLH: 36px;
+$textLH: 26px;
+// Font Weight:
+$textFontW: 400;
+$textMainFontW: 500;
+$textInputFontW: 600;
+$textBoldFontW: 700;
+//Images
+$mobileBackgroundImg: url("../../images/bg-intro-mobile.png");
+$desktopBackgroundImg: url("../../images/bg-intro-desktop.png");
+// Shadows
+$botBtnShadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+$shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
