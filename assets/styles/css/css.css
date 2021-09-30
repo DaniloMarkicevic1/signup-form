@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 * body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   background-color: #ff7979;
-  background-image: url('../../images/bg-intro-mobile.png');
+  background-image: url("../../images/bg-intro-mobile.png");
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -16,7 +16,7 @@
 }
 @media screen and (min-width: 640px) {
   * body {
-    background-image: url('../../images/bg-intro-desktop.png');
+    background-image: url("../../images/bg-intro-desktop.png");
   }
 }
 @media screen and (min-width: 1024px) {
@@ -74,8 +74,12 @@
   border-radius: 10px;
   padding: 24px;
 }
+* body .two form #firstName,
+* body .two form #lastName {
+  text-transform: capitalize;
+}
 * body .two form input {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #3d3b48;
@@ -90,7 +94,7 @@
   border: 1px solid #5e54a4;
 }
 * body .two form .input-error {
-  background-image: url('../../images/exclamation.png');
+  background-image: url("../../images/exclamation.png");
   background-repeat: no-repeat;
   background-position: center right 27px;
   border: 2px solid #ff7979;
@@ -116,7 +120,7 @@
   }
 }
 * body .two .topBtn {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   background-color: #5e54a4;
   color: #ffffff;
@@ -129,7 +133,7 @@
 * body .two .botBtn {
   background-color: #38cc8b;
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 500;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
@@ -139,7 +143,7 @@
 }
 * body .two .botBtn:hover {
   background-color: #77e2b3;
-  cursor: url('../../images/pointer.png'), pointer;
+  cursor: url("../../images/pointer.png"), pointer;
 }
 * body .two .tos {
   color: #bab7d4;
