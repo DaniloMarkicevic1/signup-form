@@ -1,5 +1,7 @@
 # Front-end Style Guide
+
 sass --watch assets/styles/sass/sass.scss assets/styles/css/css.css
+
 ## Layout
 
 The designs were created to the following widths:

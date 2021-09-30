@@ -1,7 +1,144 @@
-@use "./components/fontsAndColors";
-@use "./breakpoints/helper";
+@use './variables' as v;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  body {
+    font-family: v.$pageFont;
+    color: v.$white;
+    background-color: v.$primary;
+    background-image: v.$mobileBackgroundImg;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    @media screen and (min-width: 640px) {
+      background-image: v.$desktopBackgroundImg;
+    }
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      min-height: 800px;
+      column-gap: 45px;
+    }
+    .container {
+      padding: 0px 24px;
+      header {
+        h1 {
+          font-size: v.$titleFontSize;
+          font-weight: v.$textBoldFontW;
+          line-height: v.$titleLH;
+          @media screen and (min-width: 1024px) {
+            font-size: v.$titleDesktopSize;
+            line-height: v.$titleLHDesktop;
+          }
+        }
+      }
+      article {
+        font-weight: v.$textMainFontW;
+        padding-top: 16px;
+      }
+    }
+    .one {
+      padding-top: 88px;
+      max-width: 525px;
+      @media screen and (min-width: 1024px) {
+        padding: 0;
+        text-align: left;
+      }
+    }
+    .two {
+      max-width: 540px;
+      padding-top: 64px;
+      padding-bottom: 68px;
+      @media screen and (min-width: 1024px) {
+        // padding-right: 165px;
+        width: 100%;
+        padding: 0;
+      }
+      form {
+        background-color: v.$white;
+        box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+        margin-top: 24px;
+        border-radius: 10px;
+        padding: 24px;
+        input {
+          font-family: v.$pageFont;
+          font-weight: v.$textInputFontW;
+          font-size: v.$inputFontSize;
+          color: v.$inputColor;
+          width: 100%;
+          padding: 15px 0 15px 19.41px;
+          border-radius: 5px;
+          outline: none;
+          border: 1px solid rgba(61, 59, 72, 0.2);
+          margin-bottom: 6px;
+        }
+        input:focus {
+          border: v.$inputBorder;
+        }
+        .input-error {
+          background-image: url('../../images/exclamation.png');
+          background-repeat: no-repeat;
+          background-position: center right 27px;
+          border: 2px solid v.$primary;
+          color: v.$primary;
+        }
+        .errorMsg {
+          text-align: right;
+          font-size: v.$tosFontSize;
+          color: v.$primary;
+          font-style: v.$errorItalic;
+          font-weight: v.$textMainFontW;
+          padding-bottom: 14px;
+        }
+      }
+      button {
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 450px;
+        @media screen and (min-width: 1024px) {
+          max-width: 100%;
+        }
+      }
+      .topBtn {
+        font-family: v.$pageFont;
+        font-size: v.$btnFontSize;
+        background-color: v.$btnColorPurple;
+        color: v.$white;
+        box-shadow: v.$shadow;
+        padding: 18px 66px;
+        .topBtnText {
+          font-weight: v.$textInputFontW;
+        }
+      }
+      .botBtn {
+        background-color: v.$btnColorGreen;
+        color: v.$white;
+        font-family: v.$pageFont;
+        font-size: v.$btnFontSize;
+        font-weight: v.$textMainFontW;
+        box-shadow: v.$botBtnShadow;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 15px 0;
+      }
+      // .topBtn:hover,
+      .botBtn:hover {
+        background-color: v.$btnHover;
+        cursor: v.$cursor, pointer;
+      }
+      .tos {
+        color: v.$tosColor;
+        font-size: v.$tosFontSize;
+        padding-top: 8px;
+        a {
+          color: v.$primary;
+        }
+      }
+    }
+  }
 }

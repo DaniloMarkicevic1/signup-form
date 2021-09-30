@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -33,10 +32,34 @@
         thereafter
       </button>
       <form>
-        <input type="text" name="firstName" id="" placeholder="First Name" />
-        <input type="text" name="firstName" id="" placeholder="Last Name" />
-        <input type="text" name="firstName" id="" placeholder="Email Address" />
-        <input type="text" name="firstName" id="" placeholder="Password" />
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="First Name"
+        />
+        <div class="errorMsg"></div>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Last Name"
+        />
+        <div class="errorMsg"></div>
+        <input
+          type="text"
+          name="emailAddress"
+          id="emailAddress"
+          placeholder="Email Address"
+        />
+        <div class="errorMsg"></div>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <div class="errorMsg"></div>
         <button class="botBtn" type="submit">Claim your free trial</button>
         <p class="tos">
           By clicking the button, you are agreeing to our
@@ -44,5 +67,6 @@
         </p>
       </form>
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

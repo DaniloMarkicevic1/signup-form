@@ -1,29 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-// Colors
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap'); // Colors
 $primary: #ff7979;
 $white: #ffffff;
 $btnColorPurple: #5e54a4;
 $btnColorGreen: #38cc8b;
 $inputColor: #3d3b48;
 $tosColor: #bab7d4;
-$inputBorderColor: #DEDEDE;
-$btnHover:#77E2B3;
+$inputBorderColor: #dedede;
+$inputBorder: 1px solid #5e54a4;
+$btnHover: #77e2b3;
 // Fonts
-$pageFont: "Poppins", sans-serif;
+$pageFont: 'Poppins', sans-serif;
 $titleFontSize: 28px;
+$titleDesktopSize: 55px;
 $inputFontSize: 14px;
 $btnFontSize: 15px;
 $tosFontSize: 11px;
 $titleLH: 36px;
+$titleLHDesktop: 55px;
 $textLH: 26px;
+$errorItalic: italic;
 // Font Weight:
 $textFontW: 400;
 $textMainFontW: 500;
 $textInputFontW: 600;
 $textBoldFontW: 700;
 //Images
-$mobileBackgroundImg: url("../../images/bg-intro-mobile.png");
-$desktopBackgroundImg: url("../../images/bg-intro-desktop.png");
+$mobileBackgroundImg: url('../../images/bg-intro-mobile.png');
+$desktopBackgroundImg: url('../../images/bg-intro-desktop.png');
 // Shadows
 $botBtnShadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
 $shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+// Cursor
+$cursor: url('../../images/pointer.png');
