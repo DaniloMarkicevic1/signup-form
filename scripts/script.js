@@ -29,49 +29,38 @@ form.addEventListener('submit', (e) => {
       element.classList.add('input-error');
       errorMsg[i].textContent = `${arrayTwo[i]} cannot be empty`;
       element.placeholder = '';
-    } else if (element.id === 'firstName') {
-      if (regExFirstName.test(element.value)) {
-        e.preventDefault();
-        element.classList.add('input-error');
-        errorMsg[
-          i
-        ].textContent = `${arrayTwo[i]} cannot contain numbers or symbols`;
-        element.placeholder = '';
-      } else if (element.value.length <= 2 && element.value.length > 0) {
-        e.preventDefault();
-
-        element.classList.add('input-error');
-        errorMsg[i].textContent = `${arrayTwo[i]} too short`;
-      } else {
-        element.classList.remove('input-error');
-      }
-    } else if (element.id === 'lastName') {
-      if (regExFirstName.test(element.value)) {
-        e.preventDefault();
-        element.classList.add('input-error');
-        errorMsg[
-          i
-        ].textContent = `${arrayTwo[i]} cannot contain numbers or symbols`;
-        element.placeholder = '';
-      } else if (element.value.length > 0 && element.value.length <= 2) {
-        e.preventDefault();
-        element.classList.add('input-error');
-        errorMsg[i].textContent = `${arrayTwo[i]} too short`;
-      } else {
-        element.classList.remove('input-error');
-      }
-    } else if (element.id === 'emailAddress') {
-      if (element.value === '') {
-        e.preventDefault();
-        element.classList.add('input-error');
-        errorMsg[i].textContent = `${arrayTwo[i]} cannot be empty`;
-        element.value = 'email@example/com';
-      } else if (!regExEmail.test(element.value)) {
-        e.preventDefault();
-        element.classList.add('input-error');
-        errorMsg[i].textContent = `Not a valid E-mail`;
-        element.value = 'email@example/com';
-      }
+    }
+    switch (element.id) {
+      case 'firstName':
+      case 'lastName':
+        if (regExFirstName.test(element.value)) {
+          e.preventDefault();
+          element.classList.add('input-error');
+          errorMsg[
+            i
+          ].textContent = `${arrayTwo[i]} cannot contain numbers or symbols`;
+          element.placeholder = '';
+        } else if (element.value.length <= 2 && element.value.length > 0) {
+          e.preventDefault();
+          element.classList.add('input-error');
+          errorMsg[i].textContent = `${arrayTwo[i]} too short`;
+        }
+        break;
+      case 'emailAddress':
+        if (element.value === '') {
+          e.preventDefault();
+          element.classList.add('input-error');
+          errorMsg[i].textContent = `${arrayTwo[i]} cannot be empty`;
+          element.value = 'email@example/com';
+        } else if (!regExEmail.test(element.value)) {
+          e.preventDefault();
+          element.classList.add('input-error');
+          errorMsg[i].textContent = `Not a valid E-mail`;
+          element.value = 'email@example/com';
+        }
+        break;
+      default:
+        break;
     }
   });
 });
